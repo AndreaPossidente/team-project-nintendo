@@ -69,13 +69,14 @@ a:has(> .button-outlined) {
 }
 
 .button-outlined {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 3rem;
   border: 1px solid var(--red);
   border-radius: 0.25rem;
-  background-color: white;
+  background-color: var(--white);
   color: var(--red);
   padding: 0rem 1.5rem;
   font-size: 1.125rem;
@@ -89,10 +90,39 @@ a:has(> .button-outlined) {
   background-color: var(--light-red);
   border-color: var(--dark-red);
   padding: 1.8rem 2rem;
+  top: -0.45rem;
 
+  animation: bounce 450ms ease-in-out 0 all;
   animation-timing-function: ease-in-out;
   animation-duration: 450ms;
   animation-name: bounce;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0rem;
+    padding: 0rem 1.5rem;
+  }
+  20% {
+    top: -0.325rem;
+    padding: 1.5rem 2.05rem;
+  }
+  40% {
+    top: -0.475rem;
+    padding: 1.9rem 2.05rem;
+  }
+  60% {
+    top: -0.45rem;
+    padding: 1.8rem 2.05rem;
+  }
+  80% {
+    top: -0.475rem;
+    padding: 1.9rem 2rem;
+  }
+  100% {
+    top: -0.45rem;
+    padding: 1.8rem 2rem;
+  }
 }
 
 .featured-card {
@@ -382,32 +412,6 @@ div:has(+ div > #pos4:target) > div {
   cursor: pointer;
 }
 
-@keyframes bounce {
-  0% {
-    padding: 0rem 1.5rem;
-  }
-
-  20% {
-    padding: 1.5rem 2.05rem;
-  }
-
-  40% {
-    padding: 1.9rem 2.05rem;
-  }
-
-  60% {
-    padding: 1.8rem 2.05rem;
-  }
-
-  80% {
-    padding: 1.9rem 2rem;
-  }
-
-  100% {
-    padding: 1.8rem 2rem;
-  }
-}
-
 /* header style */
 header {
   position: sticky;
@@ -520,7 +524,7 @@ header > div:first-child {
 }
 
 #nav li:hover > .subnav {
-  max-height: 290px;
+  max-height: 304px;
 }
 
 #nav .subnav-wrapper {
