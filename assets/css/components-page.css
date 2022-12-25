@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap:20px;
 }
 
 .component {
@@ -17,4 +18,12 @@
   align-items: center;
   justify-content: center;
   height: 60px;
+}
+
+.multiple-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 2px dashed red;
+  padding: 30px;
 }

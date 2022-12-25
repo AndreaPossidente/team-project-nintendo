@@ -6,9 +6,11 @@
     --light-red: rgb(253, 230, 231);
     --gray: rgb(72, 72, 72);
     --dark-gray: rgb(36, 36, 36);
+    --light-gray: rgb(218, 218, 218);
 }
 
-html, body {
+html,
+body {
     font-family: "museo-sans";
     font-size: 16px;
     line-height: 1.4;
@@ -27,6 +29,10 @@ h1 {
 h2 {
     font-size: 1.3125rem;
     line-height: 1.35;
+}
+
+h3 {
+    font-size: 1rem;
 }
 
 p {
@@ -76,6 +82,99 @@ a:has(> .button-outlined) {
     animation-duration: 450ms;
     animation-name: bounce;
 }
+
+.featured-card { /*container of the whole card*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 260px;
+    position: relative;
+
+}
+
+.featured-card-image-container { /*container of the upper part of the card(the one that moves up)*/
+    overflow: hidden;
+    border-top: 1px solid var(--light-gray);
+    border-left: 1px solid var(--light-gray);
+    border-right: 1px solid var(--light-gray);
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.featured-card-description-container { /*container of the bottom part of the card*/
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--light-gray);
+    border-left: 1px solid var(--light-gray);
+    border-right: 1px solid var(--light-gray);
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    position: relative;
+}
+
+.featured-card-description-container::before, /*elements to not detach the border of the card when translated it renders as a vertical line of 16px the color of the border*/
+.featured-card-description-container::after {
+    content: "";
+    height: 16px;
+    background-color: var(--light-gray);
+    position: absolute; /*needed to keep the position of the element absolute in relation with its parent*/
+    width: 1px;
+    top: -16px; /*needed because the upper part of the card moves up exactly 1rem = 16px*/
+}
+
+.featured-card-description-container::before{ /*position of the pseudo created border right*/
+    right:-1px;
+}
+.featured-card-description-container::after{/*position of the pseudo created border left*/
+    left:-1px;
+}
+
+.featured-card-description {    /*container of the text*/
+    height: calc(4rem + 12px);
+}
+
+.featured-card-console-grid { /*grid to make the "Nintendo switch" occupy exactly the left part of the card*/
+    display: grid;
+    grid-template-columns: 1fr 2.5rem;
+    margin-bottom: 0.5rem;
+    height: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+    line-height: 1rem;
+}
+
+.featured-card-console { /*Container of the "console" description*/
+    display: flex;
+    align-items: flex-start;
+}
+
+.vline-red { /*Element rendered as a vertical red line (used before the Console text)*/
+    display: inline-block;
+    width: 2px;
+    height: 1rem;
+    background-color: var(--red);
+    margin-right: 0.4rem;
+}
+
+.featured-card:hover .featured-card-image-container { /*move the image up when hover over the card*/
+    transform: translateY(-1rem);
+}
+
+.featured-card:hover .featured-card-text { /*change the color of the description text*/
+    color: var(--red);
+}
+
+.featured-card:hover {
+    cursor: pointer;
+}
+
 
 @keyframes bounce {
     0% {
