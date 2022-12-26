@@ -377,6 +377,25 @@ div:has(+ div > #pos4:target)>div {
     cursor:pointer;
 }
 
+.characters-section-container{
+    max-width: 71rem;
+    margin-left:auto;
+    margin-right: auto;
+    padding-left:1rem;
+    padding-right: 1rem;
+}
+
+.characters-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    
+}
+
+.character-title{
+    grid-column: 1 / 3fr;
+}
+
 
 @keyframes bounce {
     0% {
@@ -407,4 +426,9 @@ div:has(+ div > #pos4:target)>div {
 
 @media screen and (max-width: 1025px) {}
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .characters-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
