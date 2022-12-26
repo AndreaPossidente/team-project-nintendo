@@ -248,6 +248,8 @@ a:has(> .button-outlined) {
     transition: all 200ms ease-in-out 25ms;
 }
 
+
+
 .slider-button-prev {
     left: 0px;
 }
@@ -292,6 +294,11 @@ div:has(+ div > #pos4:target)>div {
     transition: transform 0.8s;
 }
 
+#pos1,#pos2,#pos3,#pos4{
+    display:none;
+
+}
+
 #left1,
 #left2,
 #left3,
@@ -299,6 +306,10 @@ div:has(+ div > #pos4:target)>div {
 #right3,
 #right1 {
     display: none;
+}
+
+#right1 {
+    display: block;
 }
 
 
@@ -309,6 +320,10 @@ div:has(+ div > #pos4:target)>div {
 #pos3:target~#right3,
 #pos4:target~#left3 {
     display: block;
+}
+
+#pos4:target ~ #right1{
+    display:none;
 }
 
 #pos1:target~#left1 {
