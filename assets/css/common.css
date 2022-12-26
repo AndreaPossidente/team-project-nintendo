@@ -315,6 +315,68 @@ div:has(+ div > #pos4:target)>div {
     display: none;
 }
 
+.character-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.character-card-image-container {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.character-card-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.15);
+    transition: transform 200ms ease-in-out;
+}
+
+.character-card-bg img {
+    width: 100%;
+    display: block;
+}
+
+.character-card-img {
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+}
+
+.character-card-img img {
+    width: 100%;
+    display: block;
+}
+
+.character-card-image-container:hover .character-card-img{
+    transform: scale(1.15);
+    transition: transform 200ms ease-in-out;
+}
+
+.character-card-image-container:hover .character-card-bg{
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+}
+
+.character-card-image-container:hover{
+    cursor:pointer;
+}
+
 
 @keyframes bounce {
     0% {
