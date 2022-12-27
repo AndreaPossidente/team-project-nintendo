@@ -1,0 +1,61 @@
+a:has(> .button-outlined) {
+    margin-top: 1rem;
+    text-decoration: none;
+  }
+  
+  .button-outlined {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    border: 1px solid var(--red);
+    border-radius: 0.25rem;
+    background-color: var(--white);
+    color: var(--red);
+    padding: 0rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 300ms ease-in-out 0s;
+  }
+  
+  .button-outlined:hover {
+    transition: all 500ms ease-in-out 0s;
+    background-color: var(--light-red);
+    border-color: var(--dark-red);
+    padding: 1.8rem 2rem;
+    top: -0.45rem;
+  
+    animation: bounce 450ms ease-in-out 0 all;
+    animation-timing-function: ease-in-out;
+    animation-duration: 450ms;
+    animation-name: bounce;
+  }
+  
+  @keyframes bounce {
+    0% {
+      top: 0rem;
+      padding: 0rem 1.5rem;
+    }
+    20% {
+      top: -0.325rem;
+      padding: 1.5rem 2.05rem;
+    }
+    40% {
+      top: -0.475rem;
+      padding: 1.9rem 2.05rem;
+    }
+    60% {
+      top: -0.45rem;
+      padding: 1.8rem 2.05rem;
+    }
+    80% {
+      top: -0.475rem;
+      padding: 1.9rem 2rem;
+    }
+    100% {
+      top: -0.45rem;
+      padding: 1.8rem 2rem;
+    }
+  }
