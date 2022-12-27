@@ -76,7 +76,7 @@
 }
 
 .character-title {
-    grid-column: 1 / 3fr;
+    grid-column: 1 / span 3;
 }
 
 @media screen and (max-width: 768px) {

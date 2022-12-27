@@ -1,20 +1,20 @@
 .section-title {
     text-align: left;
     align-self: flex-start;
-  }
-  
-  
-  
-  .featured-card {
+}
+
+
+
+.featured-card {
     /*container of the whole card*/
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width: 260px;
     position: relative;
-  }
-  
-  .featured-card-image-container {
+}
+
+.featured-card-image-container {
     /*container of the upper part of the card(the one that moves up)*/
     overflow: hidden;
     border-top: 1px solid var(--light-gray);
@@ -23,9 +23,9 @@
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
     transition: transform 0.2s ease-in-out;
-  }
-  
-  .featured-card-description-container {
+}
+
+.featured-card-description-container {
     /*container of the bottom part of the card*/
     flex: 1 1;
     display: flex;
@@ -40,11 +40,11 @@
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
     position: relative;
-  }
-  
-  .featured-card-description-container::before,
-  /*elements to not detach the border of the card when translated it renders as a vertical line of 16px the color of the border*/
-  .featured-card-description-container::after {
+}
+
+.featured-card-description-container::before,
+/*elements to not detach the border of the card when translated it renders as a vertical line of 16px the color of the border*/
+.featured-card-description-container::after {
     content: "";
     height: 16px;
     background-color: var(--light-gray);
@@ -53,24 +53,24 @@
     width: 1px;
     top: -16px;
     /*needed because the upper part of the card moves up exactly 1rem = 16px*/
-  }
-  
-  .featured-card-description-container::before {
+}
+
+.featured-card-description-container::before {
     /*position of the pseudo created border right*/
     right: -1px;
-  }
-  
-  .featured-card-description-container::after {
+}
+
+.featured-card-description-container::after {
     /*position of the pseudo created border left*/
     left: -1px;
-  }
-  
-  .featured-card-description {
+}
+
+.featured-card-description {
     /*container of the text*/
     height: calc(4rem + 12px);
-  }
-  
-  .featured-card-console-grid {
+}
+
+.featured-card-console-grid {
     /*grid to make the "Nintendo switch" occupy exactly the left part of the card*/
     display: grid;
     grid-template-columns: 1fr 2.5rem;
@@ -80,43 +80,184 @@
     font-weight: 100;
     margin-bottom: 0.5rem;
     line-height: 1rem;
-  }
-  
-  .featured-card-console {
+}
+
+.featured-card-console {
     /*Container of the "console" description*/
     display: flex;
     align-items: flex-start;
-  }
-  
-  .vline-red {
+}
+
+.featured-card-date {
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 0;
+    color: rgb(114, 114, 114);
+}
+
+.featured-card-sale-label{
+    background-color: rgb(230, 0, 18);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 0.75rem;
+    -webkit-box-align: center;
+    align-items: center;
+    min-height: 18px;
+    padding: 0px 0.5rem;
+    border-radius: 0.25rem;
+    width: fit-content;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.featured-card-price {
+    display:flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.featured-card-previous-price{
+    position: relative;
+    display: inline;
+    color: rgb(72, 72, 72);
+    font-size: 0.8em;
+    font-weight: 300;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.featured-card-discount{
+    position: relative;
+    background-color: rgb(230, 0, 18);
+    border-radius: 0px 0.125rem 0.125rem 0px;
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding-right: 0.125rem;
+    line-height: 1rem;
+    margin-left: 1rem;
+}
+
+.featured-card-discount::before{
+    content: "";
+    background: url(../img/pVHJFtwgBBuPD.svg) no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -15%;
+}
+
+.featured-card-heart {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    margin:-0.75rem;
+    padding: 1rem;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    appearance: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.featured-card-heart svg .heart {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    flex: 0 0 auto;
+    margin: -0.75em;
+    color: rgb(230, 0, 18);
+    transition: color 200ms ease-in-out 0s;
+}
+
+.featured-card-heart:hover svg .sparks {
+    opacity: 1;
+}
+
+.spark {
+    color: rgb(172, 0, 13);
+    stroke-dasharray: 8;
+    stroke-dashoffset: 24;
+}
+
+.featured-card-heart:hover svg .heart {
+    transition: color 200ms ease-in-out 0s;
+    color: rgb(172, 0, 13);
+}
+
+.featured-card-heart:hover svg .sparks .spark {
+    animation: spark 0.5s;
+}
+
+
+@keyframes spark {
+    from {
+        stroke-dashoffset: 24;
+        stroke-dasharray: 8;
+    }
+
+    25% {
+        stroke-dashoffset: 16;
+        stroke-dasharray: 8;
+    }
+
+
+    50% {
+        stroke-dashoffset: 16;
+        stroke-dasharray: 8;
+    }
+
+    75% {
+        stroke-dashoffset: 16;
+        stroke-dasharray: 8;
+    }
+
+    to {
+        stroke-dashoffset: 16;
+        stroke-dasharray: 12;
+    }
+}
+
+
+
+
+.vline-red {
     /*Element rendered as a vertical red line (used before the Console text)*/
     display: inline-block;
     width: 2px;
     height: 1rem;
     background-color: var(--red);
     margin-right: 0.4rem;
-  }
-  
-  .featured-card:hover .featured-card-image-container {
+}
+
+.featured-card:hover .featured-card-image-container {
     /*move the image up when hover over the card*/
     transform: translateY(-1rem);
-  }
-  
-  .featured-card:hover .featured-card-text {
+}
+
+.featured-card:hover .featured-card-text {
     /*change the color of the description text*/
     color: var(--red);
-  }
-  
-  .featured-card:hover {
+}
+
+.featured-card:hover {
     cursor: pointer;
-  }
-  
-  .featured-slider-section-container {
+}
+
+.featured-slider-section-container {
     padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-  
-  .featured-slider-container {
+}
+
+.featured-slider-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,28 +267,28 @@
     overflow: hidden;
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-  
-  .featured-slider-title-container {
+}
+
+.featured-slider-title-container {
     width: 96%;
     margin-left: auto;
     margin-right: auto;
     max-width: 90rem;
     padding: 0px;
     margin-bottom: -30px;
-  }
-  
-  .featured-slider {
+}
+
+.featured-slider {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 2.5rem;
     position: relative;
-  }
-  
-  .slider-button-prev,
-  .slider-button-next {
+}
+
+.slider-button-prev,
+.slider-button-next {
     position: absolute;
     top: 0px;
     margin: 0px;
@@ -162,85 +303,88 @@
     transform: translateZ(0px);
     border-radius: 0px 0.25rem 0.25rem 0px;
     transition: all 200ms ease-in-out 25ms;
-  }
-  
-  
-  
-  .slider-button-prev {
+}
+
+
+
+.slider-button-prev {
     left: 0px;
-  }
-  
-  .slider-button-next {
+}
+
+.slider-button-next {
     right: 0px;
-  }
-  
-  .featured-slider-container:hover .slider-button-prev,
-  .featured-slider-container:hover .slider-button-next {
+}
+
+.featured-slider-container:hover .slider-button-prev,
+.featured-slider-container:hover .slider-button-next {
     background: rgba(0, 0, 0, 0.6);
     color: rgb(255, 255, 255);
     opacity: 0.5;
     cursor: pointer;
-  }
-  
-  .featured-slider-container:hover .slider-button-prev:hover,
-  .featured-slider-container:hover .slider-button-next:hover {
+}
+
+.featured-slider-container:hover .slider-button-prev:hover,
+.featured-slider-container:hover .slider-button-next:hover {
     background: rgba(0, 0, 0, 0.6);
     color: rgb(255, 255, 255);
     opacity: 0.9;
     cursor: pointer;
-  }
-  
-  div:has(+ div > #pos1:target) > div {
+}
+
+div:has(+ div > #pos1:target)>div {
     transform: translateX(0);
     transition: transform 0.8s;
-  }
-  
-  div:has(+ div > #pos2:target) > div {
+}
+
+div:has(+ div > #pos2:target)>div {
     transform: translateX(calc(-260px * 5));
     transition: transform 0.8s;
-  }
-  
-  div:has(+ div > #pos3:target) > div {
+}
+
+div:has(+ div > #pos3:target)>div {
     transform: translateX(calc(-260px * 10));
     transition: transform 0.8s;
-  }
-  
-  div:has(+ div > #pos4:target) > div {
+}
+
+div:has(+ div > #pos4:target)>div {
     transform: translateX(calc(-260px * 14.7));
     transition: transform 0.8s;
-  }
-  
-  #pos1,#pos2,#pos3,#pos4{
-      display:none;
-  
-  }
-  
-  #left1,
-  #left2,
-  #left3,
-  #right2,
-  #right3,
-  #right1 {
+}
+
+#pos1,
+#pos2,
+#pos3,
+#pos4 {
     display: none;
-  }
-  
-  #right1 {
-      display: block;
-  }
-  
-  #pos1:target~#right1,
-  #pos2:target~#left1,
-  #pos2:target~#right2,
-  #pos3:target~#left2,
-  #pos3:target~#right3,
-  #pos4:target~#left3 {
-      display: block;
-  }
-  
-  #pos4:target ~ #right1{
-      display:none;
-  }
-  
-  #pos1:target~#left1 {
-      display: none;
-  }
+
+}
+
+#left1,
+#left2,
+#left3,
+#right2,
+#right3,
+#right1 {
+    display: none;
+}
+
+#right1 {
+    display: block;
+}
+
+#pos1:target~#right1,
+#pos2:target~#left1,
+#pos2:target~#right2,
+#pos3:target~#left2,
+#pos3:target~#right3,
+#pos4:target~#left3 {
+    display: block;
+}
+
+#pos4:target~#right1 {
+    display: none;
+}
+
+#pos1:target~#left1 {
+    display: none;
+}
