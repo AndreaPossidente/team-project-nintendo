@@ -98,12 +98,12 @@
 .featured-card-sale-label{
     background-color: rgb(230, 0, 18);
     color: rgb(255, 255, 255);
-    font-weight: 700;
-    font-size: 0.75rem;
+    font-weight:500;
+    font-size: 0.65rem;
     -webkit-box-align: center;
     align-items: center;
-    min-height: 18px;
-    padding: 0px 0.5rem;
+    min-height: 15px;
+    padding: 0px 0.4rem;
     border-radius: 0.25rem;
     width: fit-content;
     display: -webkit-box;
