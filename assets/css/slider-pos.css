@@ -1,0 +1,124 @@
+div:has(+ div > #posd1:target)>div {
+    transform: translateX(0);
+    transition: transform 0.8s;
+}
+
+div:has(+ div > #posd2:target)>div {
+    transform: translateX(calc(-260px * 3.5));
+    transition: transform 0.8s;
+}
+
+div:has(+ div > #posd3:target)>div {
+    transform: translateX(calc(-260px * 7));
+    transition: transform 0.8s;
+}
+
+div:has(+ div > #posd4:target)>div {
+    transform: translateX(calc(-260px * 10.5));
+    transition: transform 0.8s;
+}
+
+#posd1,
+#posd2,
+#posd3,
+#posd4 {
+    display: none;
+
+}
+
+.slider-button-active{
+    opacity:1;
+}
+
+#leftd1,
+#leftd2,
+#leftd3,
+#rightd2,
+#rightd3,
+#rightd1 {
+    display: none;
+}
+
+#rightd1 {
+    display: block;
+}
+
+#posd1:target~#rightd1,
+#posd2:target~#leftd1,
+#posd2:target~#rightd2,
+#posd3:target~#leftd2,
+#posd3:target~#rightd3,
+#posd4:target~#leftd3 {
+    display: block;
+}
+
+#posd4:target~#rightd1 {
+    display: none;
+}
+
+#posd1:target~#leftd1 {
+    display: none;
+}
+
+
+
+
+div:has(+ div > #posx1:target)>div {
+    transform: translateX(0);
+    transition: transform 0.8s;
+}
+
+div:has(+ div > #posx2:target)>div {
+    transform: translateX(calc(-260px * 3.5));
+    transition: transform 0.8s;
+}
+
+div:has(+ div > #posx3:target)>div {
+    transform: translateX(calc(-260px * 7));
+    transition: transform 0.8s;
+}
+
+div:has(+ div > #posx4:target)>div {
+    transform: translateX(calc(-260px * 10.5));
+    transition: transform 0.8s;
+}
+
+#posx1,
+#posx2,
+#posx3,
+#posx4 {
+    display: none;
+
+}
+
+
+
+#leftx1,
+#leftx2,
+#leftx3,
+#rightx2,
+#rightx3,
+#rightx1 {
+    display: none;
+}
+
+#rightx1 {
+    display: block;
+}
+
+#posx1:target~#rightx1,
+#posx2:target~#leftx1,
+#posx2:target~#rightx2,
+#posx3:target~#leftx2,
+#posx3:target~#rightx3,
+#posx4:target~#leftx3 {
+    display: block;
+}
+
+#posx4:target~#rightx1 {
+    display: none;
+}
+
+#posx1:target~#leftx1 {
+    display: none;
+}
