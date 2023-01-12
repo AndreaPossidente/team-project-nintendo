@@ -1,0 +1,165 @@
+.modal-login-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /*needed to make it appear on top-right*/
+    position:fixed;
+    top:0px;  
+    right:-310px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: rgb(239, 239, 239);
+    width: 310px;
+    justify-content: flex-start;
+    gap: 16px;
+    visibility:hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.modal-login-title {
+    height: 4rem;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.modal-login-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+.modal-login-card-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: -10px;
+    font-weight: 500;
+}
+
+.modal-login-list{
+    margin-top:-0.8rem;
+}
+
+.modal-login-list li h5{
+    margin:3px;
+}
+
+.modal-login-list li{
+        margin-left:18px;
+        list-style-image: url(../img/tick.svg);
+}
+
+.modal-login-buttons-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-simple-red{
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button-simple-red:hover{
+    background-color: var(--dark-red);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button-simple-noborder{
+    background-color: transparent;
+    color: var(--red);
+    border: none;
+    border-radius: 4px;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    transition: color 0.2s ease-in-out;
+    margin-top:-0.5rem;
+}
+
+.button-simple-noborder:hover{
+    color: var(--dark-red);
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.modal-login-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-login-link{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-color: white;
+    border-radius:3px;
+    padding:0.6rem;
+    margin-bottom:1rem;
+    margin-bottom:0px;
+    border:1px solid var(--light-gray);
+    position: relative;
+}
+
+.modal-login-icon{ 
+    color:var(--red);
+    margin-right: 10px;
+    margin-left:10px;
+}
+
+.modal-login-link a{
+    text-decoration:none;
+    color:black;
+    font-size:0.85rem;
+    font-weight: 500;
+}
+
+.modal-login-link:first-child {
+    margin-bottom: 1.2rem;
+}
+
+.modal-login-outicon{
+    position:absolute;
+    right: 25px;
+}
+
+.show-login:focus ~ .modal-login-container{
+    visibility: visible;
+    transform:translateX(-310px);
+    transition: transform 0.2s ease-in-out;
+}
+
+.show-login{
+    border:0;
+    background-color: white;
+    padding: 10px;
+    color: var(--dark-gray);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.show-login svg{
+    margin-right:10px;
+}
+
+.show-login:hover{
+    color: var(--red);
+    cursor:pointer;
+}
+
