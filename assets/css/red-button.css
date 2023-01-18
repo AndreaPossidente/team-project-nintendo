@@ -6,7 +6,7 @@
 
 .button-red {
     display: flex;
-    background-color: rgba(216, 5, 22, 0.914);
+    background-color: var(--red);
     color: aliceblue;
     border-style: none;
     border-radius: 5px;
@@ -27,38 +27,34 @@
     background-color: rgb(172 0 13);
     cursor: pointer;
     animation-name: bounce;
-    animation-duration: 300ms;
+    animation-duration: 320ms;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     transition: all 300ms;
-    font-family: sans-serif;
-    font-weight: 700;
-    font-size: large;
-    transform: scale(1);
 }
 
 @keyframes bounce {
     0% {
-        transform: scale(1);
+        transform: scale(1.13);
     }
     25% {
-        transform: scale(0.95);
+        transform: scale(1.08);
     }
     50% {
-        transform: scale(1);
+        transform: scale(1.04);
     }
     75% {
-        transform: scale(0.95);
+        transform: scale(1.13);
     }
     100% {
-        transform: scale(1);
+        transform: scale(1.10);
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .button-red, a {
-        width: 100%;
+        width: calc(100vw - 50px);
     }
 }

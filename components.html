@@ -2143,7 +2143,12 @@
 
     <section class="component">
       <h1>Modal Login/Sign up</h1>
-      <button class="show-login"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="18" role="presentation" alt="" data-testid="UserIcon" size="18" color="currentColor"><path d="M16.22 19.41A9.71 9.71 0 1 1 26 9.7a9.74 9.74 0 0 1-9.8 9.71M1.84 32a10.88 10.88 0 0 1 10.94-10.74h6.57A10.88 10.88 0 0 1 30.29 32H1.84" fill="currentColor"></path></svg> Log in / Sign Up</button>
+      <button class="show-login"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="18"
+          role="presentation" alt="" data-testid="UserIcon" size="18" color="currentColor">
+          <path
+            d="M16.22 19.41A9.71 9.71 0 1 1 26 9.7a9.74 9.74 0 0 1-9.8 9.71M1.84 32a10.88 10.88 0 0 1 10.94-10.74h6.57A10.88 10.88 0 0 1 30.29 32H1.84"
+            fill="currentColor"></path>
+        </svg> Log in / Sign Up</button>
       <div class="display-opacity"></div>
       <div class="modal-login-container">
         <div class="modal-login-title">
@@ -2258,31 +2263,83 @@
           <h1 class="section-title"> Online Store </h1>
           <a class="online-store-img-link" href="https://www.nintendo.com/store/">
             <picture>
-              <source srcset="/assets/img/IS-3221-Ncom-StoreBanner-DT-AccessorizeYourSwitch_v01.png" width="100%" media="(min-width:768px)">
+              <source srcset="/assets/img/IS-3221-Ncom-StoreBanner-DT-AccessorizeYourSwitch_v01.png" width="100%"
+                media="(min-width:768px)">
               <img class="" src="assets/img/online-store-img-media.avif" width="100%">
             </picture>
           </a>
           <div class="online-store-description">
-          <h2 class="online-store-b">Shop games, exclusive Nintendo merchandise, and more! Plus, get free shipping on
+            <h2 class="online-store-b">Shop games, exclusive Nintendo merchandise, and more! Plus, get free shipping on
               orders $50 and over.</h2>
-              <button>
-                start shopping
+              <button class="button-red">
+                <a class="link" href="http://www.google.it" target="a_blank">Available now</a>
               </button>
           </div>
-      </section>
+        </section>
       </div>
       <div></div>
     </section>
 
     <section class="component">
       <h1>Red-Button</h1>
-      <div >
+      <div>
         <button class="button-red">
-          <a class="link" href="http://www.google.it" target="a_blank">Avaible now</a>
-      </button>
+          <a class="link" href="http://www.google.it" target="a_blank">Available now</a>
+        </button>
       </div>
       <div></div>
     </section>
+    <section class="component" style="width: 100%; text-align: center">
+      <h1>Hero section</h1>
+      <div>
+        <section class="hero-container">
+          <div class="hero-background"></div>
+          <picture class="hero-picture">
+            <source srcset="
+                  assets/img/3600x1300_centerstage_desktop.avif 1x,
+                  assets/img/3600x1300_centerstage_desktop.avif 2x
+                " media="(min-width: 1024px)" type="image/avif" width="100%" />
+            <source srcset="
+                  assets/img/2200x2000_centerstage_mobile.avif 1x,
+                  assets/img/2200x2000_centerstage_mobile.avif 2x
+                " media="(min-width: 1024px)" type="image/avif" width="100%" />
+            <img src="assets/img/2200x2000_centerstage_mobile.avif" alt="hero image" type="image/avif" width="100%" />
+          </picture>
+          <div class="hero-content">
+            <h1>Pre-order digitally today, play on 1/20</h1>
+            <button class="button-red">
+              <a class="link" href="http://www.google.it" target="a_blank">Pre-order now</a>
+            </button>
+            <div class="hero-right">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.68 59.53" width="50" height="70">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-1" d="M39.69 0H0v59.53h39.69V0z"></path>
+                    <path d="M39.11.64v58.25H.58V.64h38.53"></path>
+                    <path class="cls-1"
+                      d="M2.52 2.71H36.9v9.66H2.52zM2.5 14.47h34.4v35.51H2.5zm.01 42.32v-4.72h6.9v1.11H5.28v.67h3.5v1.1h-3.5v.74h4.29v1.1H2.51zm12.93-3.34a.52.52 0 00-.4-.32 2.53 2.53 0 00-.72-.09c-.61 0-.88.1-.88.28 0 .69 4.87.26 4.87 2 0 1.09-1.64 1.63-4 1.63s-3.7-.73-3.75-1.58h2.65a.69.69 0 00.46.37 2.52 2.52 0 00.79.12c.69 0 1.16-.12 1.16-.35 0-.71-4.88-.22-4.88-2 0-1 1.56-1.5 3.67-1.5 2.35 0 3.43.66 3.63 1.49zm7.02.67h1.09c.86 0 1.32-.13 1.32-.45s-.47-.49-1.11-.49h-1.3zm0 1v1.64h-2.77v-4.69h4c2.82 0 3.75.44 3.75 1.35 0 .55-.44 1-1.43 1.16.9.18 1.44.29 1.44 1.24 0 .61 0 .83.29.83v.14h-2.81a1.85 1.85 0 01-.14-.83c0-.61-.19-.81-1.48-.81zm9.45-1.94V54h1.16c.55 0 1-.15 1-.42s-.54-.37-1.13-.37zm0 1.64v.87h1.21c.69 0 1.21-.08 1.21-.43s-.65-.44-1.53-.44zm-2.77 2v-4.75h4c1.9 0 3.42.26 3.42 1.19 0 .49-.57.84-1.1 1 .91.13 1.4.57 1.4 1.08 0 1.05-1.44 1.42-3.64 1.42z">
+                    </path>
+                    <path
+                      d="M5.37 23.09l26.61-6.64 2.05 7.1-8.55 2.13 5.73 19.92-9.51 2.38-5.74-19.93-8.55 2.13-2.04-7.09zM28.82 4.8h2.26l2.62 2.99-.09-1.25V4.8h2.31v5.47h-2.26l-2.62-2.98.04 1.29.05 1.69h-2.31V4.8zm-8.14 0h5.99v1.27h-3.58v.79h3.03v1.27h-3.03v.86h3.73v1.28h-6.14V4.8zm-8.42 0h5.99v1.27h-3.59v.79h3.04v1.27h-3.04v.86h3.73v1.28h-6.13V4.8zm-8.79 0h6.74v1.43H8.05v4.04H5.63V6.23H3.47V4.8z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+              <span class="hero-right-text">Fantasy Violence, Mild Language, Mild Suggestive Themes</span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div></div>
+    </section>
+
     <section>
       <h1>mobile-navbar</h1>
       <div>
@@ -2324,6 +2381,7 @@
       </div>
       <div></div>
     </section>
+
     <section class="component">
       <h1>COMPONENT</h1>
       <div>
