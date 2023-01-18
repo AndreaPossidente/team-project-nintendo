@@ -3,21 +3,27 @@
     height: 60vh;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-   
  }
  .online-store-img-link{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    align-self:center
  }
  .online-store-description{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 0;
-    align-items: center;
+    align-items: start;
+    padding-left:1rem;
+    padding-right:1rem;
 
  }
- @media(max-width:768px){
+ .online-store-b{
+    width: 80%;
+ }
+ @media(max-width:1024px){
     .online-store-description{
        
         flex-direction: column;
@@ -28,9 +34,6 @@
         width: 90%;
      }
     
- }
- .online-store-b{
-    width: 80%;
  }
 
   
