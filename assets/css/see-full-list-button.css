@@ -1,0 +1,66 @@
+.page_elements {
+    display: flex;
+    justify-content: center;
+}
+
+
+.button-red {
+    display: flex;
+    background-color: rgb(230 0 18);
+    color: aliceblue;
+    border-style: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: large;
+    padding: 150px 24px 150px 24px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.button-red:hover {
+    background-color: rgb(172 0 13);
+    cursor: pointer;
+    animation-name: bounce;
+    animation-duration: 300ms;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out 25ms;
+    animation-fill-mode: forwards;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: large;
+    transform: scale(1);
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1.02);
+    }
+    15% {
+        transform: scale(1.03);
+    }
+    30% {
+        transform: scale(1.04);
+    }
+    40% {
+        transform: scale(1.06);
+    }
+    50% {
+        transform: scale(1.07);
+    }
+    60% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(1.06);
+    }
+    100% {
+        transform: scale(1.07);
+    }
+}
