@@ -1,0 +1,22 @@
+.section-divider{
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: none;
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    position: relative;
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+
+.hr-divider{
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    z-index: 5;
+    border-width: 0.0625rem 0px 0px;
+    border-top-style: solid;
+    border-top-color: rgb(218, 218, 218);
+}

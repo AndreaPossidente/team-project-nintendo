@@ -6,6 +6,7 @@
     position:relative;
     padding:2rem;
     gap:2rem;
+    width: 100%;
 }
 
 .hero-picture{
@@ -31,11 +32,11 @@
 
 .hero-content{
     display: grid;
-    grid-template-columns: 2fr 2fr auto;
+    grid-template-columns: 2fr 6fr auto;
     gap: 2rem;
-    padding-bottom:3rem;
     justify-items: start;
     align-items: center;
+    max-width: 1600px;
 }
 
 .hero-content h1{
