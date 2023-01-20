@@ -40,6 +40,10 @@
     z-index: -1;
 }
 
+.button-red-l:hover{
+    cursor: pointer;
+}
+
 .button-red-l:hover::before {
     animation: bounce 1s ease-in-out;
     background-color: rgb(139, 5, 5);
