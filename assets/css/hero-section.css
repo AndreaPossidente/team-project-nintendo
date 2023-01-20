@@ -1,0 +1,77 @@
+.hero-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    padding:2rem;
+    gap:2rem;
+    width: 100%;
+}
+
+.hero-picture{
+    display: block;
+    line-height: 0;
+    min-height: 1px;
+    width: 100%;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    height: calc(100% - 16.4rem);
+    background: url(https://assets.nintendo.com/image/upload/q_60/f_auto/dpr_2.0/ncom/en_US/merchandising/center-stage-banner/fire-emblem-engage/3600x800_PLP_background) 0% 0% / cover repeat;
+    background-repeat: repeat;
+}
+
+.hero-content{
+    display: grid;
+    grid-template-columns: 2fr 6fr auto;
+    gap: 2rem;
+    justify-items: start;
+    align-items: center;
+    max-width: 1600px;
+}
+
+.hero-content h1{
+    margin:0;
+}
+
+.hero-right{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 5rem;
+}
+
+.hero-right-text{
+    width: 27ch;
+    padding-left:0.25rem;
+    font-size: 0.8rem;
+}
+
+@media(max-width: 1025px){
+    .hero-background{
+        height: calc(100% - 12.7rem);
+    }
+    .hero-container{
+        padding:0;
+    }
+    .hero-content{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        gap:1rem;
+    }
+    .hero-right{
+        justify-self: center;
+    }
+}

@@ -12,8 +12,319 @@
   </head>
   <body>
     <header>
-      <div>
+      <div id="topbar">
         <!-- top bar -->
+        <div class="topbar-left">
+          <div class="topbar-left-logo">
+            <img src="assets/icons/topbar/logo-nintendo.svg" />
+          </div>
+          <form action="#">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search games, hardware, news, etc"
+            />
+            <div class="topbar-category">
+              <select>
+                <option>All categories</option>
+                <option>Games</option>
+                <option>Hardware</option>
+                <option>Merchandise</option>
+                <option>News &amp; Events</option>
+                <option>Support</option>
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                class="SearchBarSelectstyles__DropdownIndicatorReplacement-sc-unqtte-4 edUgEl"
+                width="14"
+                role="presentation"
+                alt=""
+                data-testid="ChevronDownIcon"
+                size="14"
+                color="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  fill="currentColor"
+                  d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"
+                ></path>
+              </svg>
+            </div>
+          </form>
+        </div>
+        <div class="topbar-right">
+          <ul class="topbar-right-list">
+            <li class="topbar-right-list-item">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="18"
+                  role="presentation"
+                  alt=""
+                  data-testid="SupportIcon"
+                  size="18"
+                  color="currentColor"
+                >
+                  <path
+                    d="M28.126.862H3.876A3.904 3.904 0 0 0 0 4.757v17.838a3.905 3.905 0 0 0 3.875 3.896h8.375c.125 0 .125 0 .125.125l3.626 4.397a.122.122 0 0 0 .125.125c.125 0 .125 0 .25-.125L20 26.616a.122.122 0 0 1 .124-.125h8.001A3.904 3.904 0 0 0 32 22.595V4.757A3.903 3.903 0 0 0 28.126.862zM17.954 20.91a2.018 2.018 0 0 1-.438.64 2.062 2.062 0 0 1-1.446.58 2.092 2.092 0 0 1-.802-.154 1.944 1.944 0 0 1-.652-.43 1.98 1.98 0 0 1-.427-.642 2.119 2.119 0 0 1-.001-1.59 1.97 1.97 0 0 1 .43-.65 2.055 2.055 0 0 1 .643-.432 2.078 2.078 0 0 1 1.613 0 2.152 2.152 0 0 1 .64.428l.002.001a2.045 2.045 0 0 1 .438 2.25zm2.964-10.055a4.505 4.505 0 0 1-.662 1.159 5.04 5.04 0 0 1-.861.844l-.822.622a6.01 6.01 0 0 0-.626.538.766.766 0 0 0-.231.426l-.303 1.923h-2.517l-.222-2.13a1.824 1.824 0 0 1 .193-1.127 3.152 3.152 0 0 1 .648-.812 7.965 7.965 0 0 1 .838-.658 6.94 6.94 0 0 0 .782-.626 3.116 3.116 0 0 0 .574-.716 1.726 1.726 0 0 0 .208-.873 1.287 1.287 0 0 0-.112-.55 1.213 1.213 0 0 0-.318-.414 1.482 1.482 0 0 0-.506-.275 2.946 2.946 0 0 0-1.628.018 3.595 3.595 0 0 0-.666.277 8.824 8.824 0 0 0-.49.294.966.966 0 0 1-1.483-.33l-.872-1.378.24-.212a8 8 0 0 1 .86-.657 6.234 6.234 0 0 1 1.023-.55 6.4 6.4 0 0 1 1.192-.37 6.63 6.63 0 0 1 3.248.15 4.301 4.301 0 0 1 1.475.826 3.736 3.736 0 0 1 .966 1.314 4.161 4.161 0 0 1 .34 1.703 4.304 4.304 0 0 1-.268 1.584z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+                Support</a
+              >
+            </li>
+            <li class="topbar-right-list-item">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="18"
+                  role="presentation"
+                  alt=""
+                  data-testid="HeartIcon"
+                  size="18"
+                  color="currentColor"
+                >
+                  <path
+                    d="M22.3 1.3c-2.3 0-4.5 1-6.3 2.8-1.7-1.8-3.9-2.8-6.3-2.8C4.4 1.3 0 5.7 0 11.2c0 2.6 1.2 5.1 3.3 7.3L15 30.2c.3.3.6.4 1 .4.3 0 .7-.1 1-.4l11.6-11.6c1.5-1.8 3.3-4.3 3.3-7.5.1-5.4-4.3-9.8-9.6-9.8z"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                Wish List</a
+              >
+            </li>
+            <li class="topbar-right-list-item">
+              <a href="#">
+                <svg
+                  data-name="Shopping cart"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="20"
+                  role="presentation"
+                  alt=""
+                  data-testid="ShoppingCartIcon"
+                  size="20"
+                  color="currentColor"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M23.12 28.073a2.248 2.248 0 1 0 2.25-2.326h-.005a2.288 2.288 0 0 0-2.245 2.326zm2.397-7.29a1.728 1.728 0 0 0 1.498-.982l4.844-11.686a1.544 1.544 0 0 0-.15-1.551 1.593 1.593 0 0 0-1.349-.673H8.44l-.55-2.895A1.494 1.494 0 0 0 6.393 1.6H1.598A1.606 1.606 0 0 0 0 3.255a1.548 1.548 0 0 0 1.598 1.654h3.496L7.49 18.973l-1.098 4.706a1.67 1.67 0 0 0 .25 1.395 1.529 1.529 0 0 0 1.198.673h18.675a1.656 1.656 0 0 0 0-3.31H9.937l.4-1.654zm-18.726 7.29a2.248 2.248 0 1 0 2.25-2.326h-.005a2.288 2.288 0 0 0-2.245 2.326z"
+                  ></path>
+                </svg>
+                Cart</a
+              >
+            </li>
+            <li class="topbar-right-list-item">
+              <a class="show-login" href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="18"
+                  role="presentation"
+                  alt=""
+                  data-testid="UserIcon"
+                  size="18"
+                  color="currentColor"
+                >
+                  <path
+                    d="M16.22 19.41A9.71 9.71 0 1 1 26 9.7a9.74 9.74 0 0 1-9.8 9.71M1.84 32a10.88 10.88 0 0 1 10.94-10.74h6.57A10.88 10.88 0 0 1 30.29 32H1.84"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                Login / Sign up</a
+              >
+              <div class="display-opacity"></div>
+              <div class="modal-login-container">
+                <div class="modal-login-title">
+                  <h4>Log in / Sign up</h4>
+                </div>
+                <div class="modal-login-card">
+                  <img
+                    src="./assets/img/unauthd-asset.png"
+                    alt=""
+                    width="80%"
+                  />
+                  <div class="modal-login-card-description">
+                    <h4 class="modal-login-card-subtitle">
+                      With a free account you can
+                    </h4>
+                    <ul class="modal-login-list">
+                      <li>
+                        <h5>Shop online</h5>
+                      </li>
+                      <li>
+                        <h5>Earn My Nintendo points</h5>
+                      </li>
+                      <li>
+                        <h5>Save a Wish List</h5>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-login-buttons-container">
+                  <button class="button-simple-red">Log in</button>
+                  <button class="button-simple-noborder">Sign up</button>
+                </div>
+                <div class="modal-login-links">
+                  <div class="modal-login-link">
+                    <div class="modal-login-icon">
+                      <svg
+                        viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        role="presentation"
+                        alt=""
+                        data-testid="ReceiptIcon"
+                        size="18"
+                        color="currentColor"
+                      >
+                        <path
+                          d="M26 1.6L24 0l-2 1.6L20 0l-2 1.6L16 0l-2 1.6L12 0l-2 1.6L8 0 6 1.6 4 0v30.4L6 32l2-1.6 2 1.6 2-1.6 2 1.6 2-1.6 2 1.6 2-1.6 2 1.6 2-1.6 2 1.6 2-1.6V0l-2 1.6zM8 6h8v2H8V6zm16 20H8v-2h16v2zm0-4H8v-2h16v2zm0-4H8v-2h16v2zm0-4H8v-2h16v2z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <a href="#">Order status</a>
+                  </div>
+
+                  <div class="modal-login-link">
+                    <div class="modal-login-icon">
+                      <svg
+                        viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        role="presentation"
+                        alt=""
+                        data-testid="MyNintendoTileIcon"
+                        size="18"
+                        color="currentColor"
+                      >
+                        <path
+                          d="M26.667 0H5.333A5.333 5.333 0 0 0 0 5.333v21.334A5.333 5.333 0 0 0 5.333 32h21.334A5.333 5.333 0 0 0 32 26.667V5.333A5.333 5.333 0 0 0 26.667 0zm-5.105 22.423a5.212 5.212 0 0 1-2.37-.602 10.482 10.482 0 0 1-13.67-1.608.803.803 0 0 1 1.228-1.036 8.866 8.866 0 0 0 11.914 1.04.803.803 0 0 1 .986-.005 3.461 3.461 0 0 0 5.41-2.888 3.495 3.495 0 0 0-3.39-3.416c-.016 0-.036 0-.063-.002a.962.962 0 0 0-.12.003.806.806 0 0 1-.778-.455 6.54 6.54 0 0 0-5.992-3.848c-2.82 0-5.738 1.802-5.738 4.819-.003.818.35 1.596.969 2.132l1.688-3.147a.803.803 0 0 1 1.423.015l.982 1.926.983-1.926a.8.8 0 0 1 .71-.438c.3 0 .574.164.716.428l2.076 3.933a.8.8 0 0 1-.03.804.802.802 0 0 1-1.391-.054l-1.353-2.564-.995 1.95a.803.803 0 0 1-1.431-.001l-1-1.96-1.384 2.58a.805.805 0 0 1-1.046.349 4.563 4.563 0 0 1-2.524-4.027C7.372 10.403 11.107 8 14.717 8a8.081 8.081 0 0 1 7.209 4.308 5.063 5.063 0 0 1-.363 10.115z"
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                    <a href="#">My Nintendo</a>
+                    <div class="modal-login-outicon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 32 32"
+                        width="12"
+                        role="presentation"
+                        alt=""
+                        data-testid="OffsiteIcon"
+                        size="14"
+                        color="currentColor"
+                      >
+                        <path
+                          d="M12.7 5.3v4H4V28h17.3v-8.7h4v10c0 1.5-1.2 2.7-2.7 2.7h-20C1.2 32 0 30.8 0 29.3V8c0-1.5 1.2-2.7 2.7-2.7h10zM32 0v16h-4V6.8L15.1 19.9 12.2 17l13-13H16V0h16z"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="modal-login-link">
+                    <div class="modal-login-icon">
+                      <svg
+                        viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        role="presentation"
+                        alt=""
+                        data-testid="GiftIcon"
+                        size="16"
+                        color="currentColor"
+                      >
+                        <g fill="currentColor">
+                          <path
+                            d="M12.151 13.21c.204 0 .406-.035.599-.1.73-.171 1.2-.882 1.073-1.621a1.25 1.25 0 0 0-1.236-.739c-.203 0-.406.035-.598.1a1.417 1.417 0 0 0-1.073 1.621c.214.483.709.779 1.235.739zm-4.561 0a1.247 1.247 0 0 0 1.235-.739 1.414 1.414 0 0 0-1.073-1.62 1.84 1.84 0 0 0-.598-.1 1.247 1.247 0 0 0-1.235.738 1.415 1.415 0 0 0 1.073 1.62c.192.066.394.1.598.1z"
+                          ></path>
+                          <path
+                            d="M0 8.533v4.8h4.897c-.5-.664-.65-1.53-.4-2.324A2.724 2.724 0 0 1 7.154 9.25 3.257 3.257 0 0 1 9 9.817V5.333H3.2a3.197 3.197 0 0 0-3.2 3.2zm28.8-3.2H11v4.318a3.336 3.336 0 0 1 1.587-.401 2.724 2.724 0 0 1 2.657 1.76c.25.793.1 1.659-.4 2.323H32v-4.8a3.2 3.2 0 0 0-3.2-3.2zM14.52 16.908a.75.75 0 1 1-.91 1.192L11 16.106v10.56h17.8a3.196 3.196 0 0 0 3.2-3.199v-8.134H12.46l2.06 1.575zm-8.843 1.346a.749.749 0 0 1-.456-1.346l2.061-1.575H0v8.134a3.2 3.2 0 0 0 3.2 3.2H9V15.908L6.131 18.1c-.13.1-.29.154-.454.154z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <a href="#">Redeem code</a>
+                    <div class="modal-login-outicon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 32 32"
+                        width="12"
+                        role="presentation"
+                        alt=""
+                        data-testid="OffsiteIcon"
+                        size="14"
+                        color="currentColor"
+                      >
+                        <path
+                          d="M12.7 5.3v4H4V28h17.3v-8.7h4v10c0 1.5-1.2 2.7-2.7 2.7h-20C1.2 32 0 30.8 0 29.3V8c0-1.5 1.2-2.7 2.7-2.7h10zM32 0v16h-4V6.8L15.1 19.9 12.2 17l13-13H16V0h16z"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="modal-login-link">
+                    <div class="modal-login-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 32 32"
+                        width="16"
+                        role="presentation"
+                        alt=""
+                        data-testid="GearIcon"
+                        size="18"
+                        color="currentColor"
+                      >
+                        <path
+                          d="M30.6 13.1h-2.4c-.3-1.4-.8-2.6-1.5-3.8l1.7-1.7c.5-.5.5-1.4 0-1.9l-2.1-2.1c-.5-.5-1.4-.5-1.9 0l-1.7 1.7c-1.2-.7-2.4-1.3-3.8-1.5V1.4c0-.7-.6-1.4-1.4-1.4h-3c-.7 0-1.4.6-1.4 1.4v2.4c-1.4.4-2.6.8-3.8 1.5L7.6 3.6c-.5-.5-1.4-.5-1.9 0L3.6 5.7c-.6.5-.6 1.4 0 1.9l1.7 1.7c-.7 1.2-1.3 2.4-1.5 3.8H1.3c-.7 0-1.4.6-1.4 1.4v3c0 .7.6 1.4 1.4 1.4h2.4c.3 1.4.8 2.6 1.5 3.8l-1.7 1.7c-.5.5-.5 1.4 0 1.9l2.1 2.1c.6.5 1.4.5 2 0l1.7-1.7c1.2.7 2.4 1.3 3.8 1.5v2.5c0 .7.6 1.4 1.4 1.4h3c.7 0 1.4-.6 1.4-1.4v-2.4c1.4-.3 2.6-.8 3.8-1.5l1.7 1.7c.5.5 1.4.5 1.9 0l2.1-2.1c.5-.5.5-1.4 0-1.9l-1.7-1.7c.7-1.2 1.3-2.4 1.5-3.8h2.4c.7 0 1.4-.6 1.4-1.4v-3c.1-.9-.6-1.5-1.4-1.5zM16 21.6c-3.1 0-5.6-2.5-5.6-5.6 0-3.1 2.5-5.6 5.6-5.6 3.1 0 5.6 2.5 5.6 5.6-.1 3.1-2.6 5.6-5.6 5.6z"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <a href="#">Account settings</a>
+                    <div class="modal-login-outicon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 32 32"
+                        width="12"
+                        role="presentation"
+                        alt=""
+                        data-testid="OffsiteIcon"
+                        size="14"
+                        color="currentColor"
+                      >
+                        <path
+                          d="M12.7 5.3v4H4V28h17.3v-8.7h4v10c0 1.5-1.2 2.7-2.7 2.7h-20C1.2 32 0 30.8 0 29.3V8c0-1.5 1.2-2.7 2.7-2.7h10zM32 0v16h-4V6.8L15.1 19.9 12.2 17l13-13H16V0h16z"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
       <nav id="nav">
         <!-- navbar -->
@@ -284,31 +595,3323 @@
         </ul>
         <div class="nav-overlay"></div>
       </nav>
+      <nav class="container-list">
+        <div class="navbar-mobile-elements">
+          <button type="button" id="menu-button" class="mobile-navbar-button">
+            <img src="assets/img/svg7.svg" class="icon" />
+          </button>
+        </div>
+        <div class="navbar-mobile-elements">
+          <button type="button" class="mobile-navbar-button">
+            <a href="http://www.google.it" target="_blank">
+              <img src="assets/img/svg8.svg" class="icon" id="heart" />
+            </a>
+          </button>
+        </div>
+        <div class="center">
+          <button class="mobile-navbar-button">
+            <a href="http://www.google.it" target="_blank">
+              <img src="assets/img/svg9.svg" class="search-button" />
+            </a>
+          </button>
+        </div>
+        <div class="navbar-mobile-elements">
+          <button type="button" class="mobile-navbar-button">
+            <a href="http://www.google.it" target="_blank">
+              <img src="assets/img/svg10.svg" class="icon" id="cart" />
+            </a>
+          </button>
+        </div>
+        <div class="navbar-mobile-elements">
+          <button type="button" class="mobile-navbar-button">
+            <img src="assets/img/svg11.svg" class="icon" />
+          </button>
+        </div>
+      </nav>
     </header>
-    <main>
-      <section>
-        <!-- hero section -->
+    <main class="container">
+      <section class="hero-container">
+        <div class="hero-background"></div>
+        <picture class="hero-picture">
+          <source
+            srcset="
+              assets/img/3600x1300_centerstage_desktop.avif 1x,
+              assets/img/3600x1300_centerstage_desktop.avif 2x
+            "
+            media="(min-width: 1024px)"
+            type="image/avif"
+            width="100%"
+          />
+          <source
+            srcset="
+              assets/img/2200x2000_centerstage_mobile.avif 1x,
+              assets/img/2200x2000_centerstage_mobile.avif 2x
+            "
+            media="(min-width: 1024px)"
+            type="image/avif"
+            width="100%"
+          />
+          <img
+            src="assets/img/2200x2000_centerstage_mobile.avif"
+            alt="hero image"
+            type="image/avif"
+            width="100%"
+          />
+        </picture>
+        <div class="hero-content">
+          <h1>Summon icon heroes</h1>
+          <button class="button-red">
+            <a class="link" href="http://www.google.it" target="a_blank"
+              >Pre-order now</a
+            >
+          </button>
+          <div class="hero-right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 39.68 59.53"
+              width="50"
+              height="70"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                  }
+                </style>
+              </defs>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path class="cls-1" d="M39.69 0H0v59.53h39.69V0z"></path>
+                  <path d="M39.11.64v58.25H.58V.64h38.53"></path>
+                  <path
+                    class="cls-1"
+                    d="M2.52 2.71H36.9v9.66H2.52zM2.5 14.47h34.4v35.51H2.5zm.01 42.32v-4.72h6.9v1.11H5.28v.67h3.5v1.1h-3.5v.74h4.29v1.1H2.51zm12.93-3.34a.52.52 0 00-.4-.32 2.53 2.53 0 00-.72-.09c-.61 0-.88.1-.88.28 0 .69 4.87.26 4.87 2 0 1.09-1.64 1.63-4 1.63s-3.7-.73-3.75-1.58h2.65a.69.69 0 00.46.37 2.52 2.52 0 00.79.12c.69 0 1.16-.12 1.16-.35 0-.71-4.88-.22-4.88-2 0-1 1.56-1.5 3.67-1.5 2.35 0 3.43.66 3.63 1.49zm7.02.67h1.09c.86 0 1.32-.13 1.32-.45s-.47-.49-1.11-.49h-1.3zm0 1v1.64h-2.77v-4.69h4c2.82 0 3.75.44 3.75 1.35 0 .55-.44 1-1.43 1.16.9.18 1.44.29 1.44 1.24 0 .61 0 .83.29.83v.14h-2.81a1.85 1.85 0 01-.14-.83c0-.61-.19-.81-1.48-.81zm9.45-1.94V54h1.16c.55 0 1-.15 1-.42s-.54-.37-1.13-.37zm0 1.64v.87h1.21c.69 0 1.21-.08 1.21-.43s-.65-.44-1.53-.44zm-2.77 2v-4.75h4c1.9 0 3.42.26 3.42 1.19 0 .49-.57.84-1.1 1 .91.13 1.4.57 1.4 1.08 0 1.05-1.44 1.42-3.64 1.42z"
+                  ></path>
+                  <path
+                    d="M5.37 23.09l26.61-6.64 2.05 7.1-8.55 2.13 5.73 19.92-9.51 2.38-5.74-19.93-8.55 2.13-2.04-7.09zM28.82 4.8h2.26l2.62 2.99-.09-1.25V4.8h2.31v5.47h-2.26l-2.62-2.98.04 1.29.05 1.69h-2.31V4.8zm-8.14 0h5.99v1.27h-3.58v.79h3.03v1.27h-3.03v.86h3.73v1.28h-6.14V4.8zm-8.42 0h5.99v1.27h-3.59v.79h3.04v1.27h-3.04v.86h3.73v1.28h-6.13V4.8zm-8.79 0h6.74v1.43H8.05v4.04H5.63V6.23H3.47V4.8z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <span class="hero-right-text"
+              >Fantasy Violence, Mild Language, Mild Suggestive Themes</span
+            >
+          </div>
+        </div>
       </section>
-      <section>
-        <!-- featured section -->
+      <div class="section-divider">
+        <hr class="hr-divider" />
+      </div>
+
+      <!--featured-section-->
+      <section class="featured-slider-section-container">
+        <div class="featured-slider-title-container">
+          <h1 class="section-title">Featured</h1>
+        </div>
+        <div class="featured-slider-container">
+          <div class="featured-slider">
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/Ncom_1920x1080_feature.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Sale ends 1/1 at 11:59 p.m. PT
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/Snack_NintendoHoliday2022_thumbnail_day5_no_Nintendo.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Inside the House of Indies: Holiday Event
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid"></div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/680x383_YIR2022_EN.avif"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Learn about your most—played games and more!
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid"></div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/fire_emblem.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Fire Emblem Engage—Pre-order
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/splat3_tga.avif"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Splatoon 3—Available now</h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/1280x720_MK8DBCP_wave-3_hero.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Mario Kart 8 Deluxe DLC Wave 3—Available now
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--vkvzmj.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Mario+Rabbids Sparks of Hope—Available now
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/bayo3_tga.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Bayonetta 3—Available now</h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--J9Zwu8.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Crisis Core –Final Fantasy VII– Reunion
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--cTK09s.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Fortnite—Chapter 4 Season 1
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--gr4d0t.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Dragon Quest Treasures—Available now
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/NINMERCH-1468-1920x1080-GridPromos-MarioFriends_v01.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Check out games featuring Mario and friends!
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid"></div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/xenoblade.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Xenoblade Chronicles 3—Available now
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/2250x1266_MarioStrikers_update3_EN.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Free demo available</h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/OW2_Season_2_Gingerbread_Bastion_Promo_NX_1920x1080_OW2_logo_only_1.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Overwatch 2: Season 2—Free download
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/image.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Just Dance 2023 Edition—Available now
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/FallGuys-yeetings.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Fall Guys—Season’s Yeetings!
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/1920x1080-NSO_EP_20222204.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Nintendo Switch Online + Expansion Pack
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/1216splatfest.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">
+                    Splatoon 3 Splatfest—Learn more
+                  </h3>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <a class="pos" id="pos1"></a>
+            <a class="pos" id="pos2"></a>
+            <a class="pos" id="pos3"></a>
+            <a class="pos" id="pos4"></a>
+
+            <a href="#pos1" id="left1">
+              <button
+                aria-label="Previous page"
+                tabindex="0"
+                class="slider-button-prev"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M14.3 16l12.4 11.7-4.5 4.3L5.3 16 22.2 0l4.5 4.3z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+
+            <a href="#pos2" id="left2">
+              <button
+                aria-label="Previous page"
+                tabindex="0"
+                class="slider-button-prev"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M14.3 16l12.4 11.7-4.5 4.3L5.3 16 22.2 0l4.5 4.3z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+
+            <a href="#pos3" id="left3">
+              <button
+                aria-label="Previous page"
+                tabindex="0"
+                class="slider-button-prev"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M14.3 16l12.4 11.7-4.5 4.3L5.3 16 22.2 0l4.5 4.3z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+
+            <a href="#pos2" id="right1">
+              <button
+                aria-label="Next page"
+                tabindex="0"
+                class="slider-button-next"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                  color="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M5.3 4.3L9.8 0l16.9 16L9.8 32l-4.5-4.3L17.7 16z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+            <a href="#pos3" id="right2">
+              <button
+                aria-label="Next page"
+                tabindex="0"
+                class="slider-button-next"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                  color="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M5.3 4.3L9.8 0l16.9 16L9.8 32l-4.5-4.3L17.7 16z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+            <a href="#pos4" id="right3">
+              <button
+                aria-label="Next page"
+                tabindex="0"
+                class="slider-button-next"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                  color="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M5.3 4.3L9.8 0l16.9 16L9.8 32l-4.5-4.3L17.7 16z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
       </section>
-      <section>
-        <!-- online store section -->
+
+      <div class="section-divider">
+        <hr class="hr-divider" />
+      </div>
+
+      <!-- online store section -->
+      <section class="online-store">
+        <h1 class="section-title">Online Store</h1>
+        <a class="online-store-img-link" href="https://www.nintendo.com/store/">
+          <picture>
+            <source
+              srcset="
+                /assets/img/IS-3221-Ncom-StoreBanner-DT-AccessorizeYourSwitch_v01.png
+              "
+              width="100%"
+              media="(min-width:768px)"
+            />
+            <img
+              class=""
+              src="assets/img/online-store-img-media.avif"
+              width="100%"
+            />
+          </picture>
+        </a>
+        <div class="online-store-description">
+          <h2 class="online-store-b">
+            Shop games, exclusive Nintendo merchandise, and more! Plus, get free
+            shipping on orders $50 and over.
+          </h2>
+          <button class="button-red">
+            <a class="link" href="http://www.google.it" target="a_blank"
+              >Available now</a
+            >
+          </button>
+        </div>
       </section>
+
+      <div class="section-divider">
+        <hr class="hr-divider" />
+      </div>
+
       <section>
         <!-- gaming systems section -->
       </section>
       <section>
         <!-- news section -->
       </section>
-      <section>
-        <!-- characters section -->
+      <section class="characters-section-container">
+        <h1 class="character-title">Characters</h1>
+        <div class="characters-container">
+          <section class="character-card">
+            <a class="character-card-image-container">
+              <div class="character-card-bg">
+                <img alt="mario-bg" src="assets/img/mario-bg.png" />
+              </div>
+              <div class="character-card-img">
+                <img
+                  alt="mario"
+                  src="assets/img/1600x1600_NCOM_Home_Characters_Mario.png"
+                />
+              </div>
+            </a>
+            <h2>Super Mario™️</h2>
+          </section>
+
+          <section class="character-card">
+            <a class="character-card-image-container">
+              <div class="character-card-bg">
+                <img
+                  alt="mario-bg"
+                  src="assets/img/1600x1600_NCOM_Home_Characters_TLOZ_BOTW_BG.png"
+                />
+              </div>
+              <div class="character-card-img">
+                <img
+                  alt="mario"
+                  src="assets/img/1600x1600_NCOM_Home_Characters_TLOZ_BOTW.png"
+                />
+              </div>
+            </a>
+            <h2>The Legend of Zelda™️</h2>
+          </section>
+
+          <section class="character-card">
+            <a class="character-card-image-container">
+              <div class="character-card-bg">
+                <img
+                  alt="mario-bg"
+                  src="assets/img/Ncom_CharacterRail_1600x1600_Splatoon_BG.png"
+                />
+              </div>
+              <div class="character-card-img">
+                <img
+                  alt="mario"
+                  src="assets/img/Ncom_CharacterRail_1600x1600_Splatoon_character_v2.png"
+                />
+              </div>
+            </a>
+            <h2>Splatoon™️</h2>
+          </section>
+
+          <section class="character-card">
+            <a class="character-card-image-container">
+              <div class="character-card-bg">
+                <img
+                  alt="mario-bg"
+                  src="assets/img/1600x1600_NCOM_Home_Characters_Kirby_BG.png"
+                />
+              </div>
+              <div class="character-card-img">
+                <img
+                  alt="mario"
+                  src="assets/img/1600x1600_NCOM_Home_Characters_Kirby.png"
+                />
+              </div>
+            </a>
+            <h2>Kirby™️</h2>
+          </section>
+        </div>
       </section>
-      <section>
-        <!-- digital best sellers section -->
+      <div class="section-divider">
+        <hr class="hr-divider" />
+      </div>
+
+      <!-- digital new releases slider -->
+      <section class="featured-slider-section-container slider-center">
+        <div class="featured-slider-title-container">
+          <h1 class="section-title">Digital best sellers</h1>
+        </div>
+        <div class="featured-slider-container">
+          <div class="featured-slider">
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--fsZelq.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Hollow Knight</h3>
+                  <div class="featured-card-date">06/12/2018</div>
+                </div>
+                <div class="featured-card-sale-label">
+                  Sale ends: 1/15/2023 PT
+                </div>
+                <div class="featured-card-price">
+                  <b>$7.50</b>
+                  <span class="featured-card-previous-price">$15.00</span>
+                  <span class="featured-card-discount">-50%</span>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--mQVKM7.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Stardew Valley</h3>
+                  <div class="featured-card-date">10/05/2017</div>
+                </div>
+                <div class="featured-card-sale-label">
+                  Sale ends: 1/15/2023 PT
+                </div>
+                <div class="featured-card-price">
+                  <b>$9.99</b>
+                  <span class="featured-card-previous-price">$14.99</span>
+                  <span class="featured-card-discount">-33%</span>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--wHVFOd.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Hades</h3>
+                  <div class="featured-card-date">09/17/2020</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$29.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--35fSGB.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Pool Pro GOLD</h3>
+                  <div class="featured-card-date">08/13/2020</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$9.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--fsZelq.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Hollow Knight</h3>
+                  <div class="featured-card-date">06/12/2018</div>
+                </div>
+                <div class="featured-card-sale-label">
+                  Sale ends: 1/15/2023 PT
+                </div>
+                <div class="featured-card-price">
+                  <b>$7.50</b>
+                  <span class="featured-card-previous-price">$15.00</span>
+                  <span class="featured-card-discount">-50%</span>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--mQVKM7.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Stardew Valley</h3>
+                  <div class="featured-card-date">10/05/2017</div>
+                </div>
+                <div class="featured-card-sale-label">
+                  Sale ends: 1/15/2023 PT
+                </div>
+                <div class="featured-card-price">
+                  <b>$9.99</b>
+                  <span class="featured-card-previous-price">$14.99</span>
+                  <span class="featured-card-discount">-33%</span>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--wHVFOd.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Hades</h3>
+                  <div class="featured-card-date">09/17/2020</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$29.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--35fSGB.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Pool Pro GOLD</h3>
+                  <div class="featured-card-date">08/13/2020</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$9.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--fsZelq.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Hollow Knight</h3>
+                  <div class="featured-card-date">06/12/2018</div>
+                </div>
+                <div class="featured-card-sale-label">
+                  Sale ends: 1/15/2023 PT
+                </div>
+                <div class="featured-card-price">
+                  <b>$7.50</b>
+                  <span class="featured-card-previous-price">$15.00</span>
+                  <span class="featured-card-discount">-50%</span>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--mQVKM7.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Stardew Valley</h3>
+                  <div class="featured-card-date">10/05/2017</div>
+                </div>
+                <div class="featured-card-sale-label">
+                  Sale ends: 1/15/2023 PT
+                </div>
+                <div class="featured-card-price">
+                  <b>$9.99</b>
+                  <span class="featured-card-previous-price">$14.99</span>
+                  <span class="featured-card-discount">-33%</span>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--wHVFOd.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Hades</h3>
+                  <div class="featured-card-date">09/17/2020</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$29.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--35fSGB.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Pool Pro GOLD</h3>
+                  <div class="featured-card-date">08/13/2020</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$9.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--fsZelq.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Hollow Knight</h3>
+                  <div class="featured-card-date">06/12/2018</div>
+                </div>
+                <div class="featured-card-sale-label">
+                  Sale ends: 1/15/2023 PT
+                </div>
+                <div class="featured-card-price">
+                  <b>$7.50</b>
+                  <span class="featured-card-previous-price">$15.00</span>
+                  <span class="featured-card-discount">-50%</span>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--mQVKM7.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Stardew Valley</h3>
+                  <div class="featured-card-date">10/05/2017</div>
+                </div>
+                <div class="featured-card-sale-label">
+                  Sale ends: 1/15/2023 PT
+                </div>
+                <div class="featured-card-price">
+                  <b>$9.99</b>
+                  <span class="featured-card-previous-price">$14.99</span>
+                  <span class="featured-card-discount">-33%</span>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--wHVFOd.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Hades</h3>
+                  <div class="featured-card-date">09/17/2020</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$29.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--35fSGB.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Pool Pro GOLD</h3>
+                  <div class="featured-card-date">08/13/2020</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$9.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <a class="pos" id="posd1"></a>
+            <a class="pos" id="posd2"></a>
+            <a class="pos" id="posd3"></a>
+            <a class="pos" id="posd4"></a>
+
+            <a href="#posd1" id="leftd1">
+              <button
+                aria-label="Previous page"
+                tabindex="0"
+                class="slider-button-prev slider-button-active"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M14.3 16l12.4 11.7-4.5 4.3L5.3 16 22.2 0l4.5 4.3z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+
+            <a href="#posd2" id="leftd2">
+              <button
+                aria-label="Previous page"
+                tabindex="0"
+                class="slider-button-prev"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M14.3 16l12.4 11.7-4.5 4.3L5.3 16 22.2 0l4.5 4.3z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+
+            <a href="#posd3" id="leftd3">
+              <button
+                aria-label="Previous page"
+                tabindex="0"
+                class="slider-button-prev"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M14.3 16l12.4 11.7-4.5 4.3L5.3 16 22.2 0l4.5 4.3z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+
+            <a href="#posd2" id="rightd1">
+              <button
+                aria-label="Next page"
+                tabindex="0"
+                class="slider-button-next slider-button-active"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                  color="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M5.3 4.3L9.8 0l16.9 16L9.8 32l-4.5-4.3L17.7 16z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+            <a href="#posd3" id="rightd2">
+              <button
+                aria-label="Next page"
+                tabindex="0"
+                class="slider-button-next"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                  color="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M5.3 4.3L9.8 0l16.9 16L9.8 32l-4.5-4.3L17.7 16z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+            <a href="#posd4" id="rightd3">
+              <button
+                aria-label="Next page"
+                tabindex="0"
+                class="slider-button-next"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                  color="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M5.3 4.3L9.8 0l16.9 16L9.8 32l-4.5-4.3L17.7 16z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
       </section>
-      <section>
-        <!-- digital new releases section -->
+      <!-- digital best sellers slider -->
+      <section class="featured-slider-section-container slider-center-second">
+        <div class="featured-slider-title-container">
+          <h1 class="section-title">Digital new releases</h1>
+        </div>
+        <div class="featured-slider-container">
+          <div class="featured-slider">
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--uUfDz2.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Sports Story</h3>
+                  <div class="featured-card-date">12/23/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$14.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--LTzovB.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Melatonin</h3>
+                  <div class="featured-card-date">12/22/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$14.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--hIuVPt.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Hyper Gunsport</h3>
+                  <div class="featured-card-date">12/22/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$24.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--N02q2m.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Sail Forth</h3>
+                  <div class="featured-card-date">12/21/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$19.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--uUfDz2.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Sports Story</h3>
+                  <div class="featured-card-date">12/23/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$14.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--LTzovB.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Melatonin</h3>
+                  <div class="featured-card-date">12/22/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$14.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--hIuVPt.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Hyper Gunsport</h3>
+                  <div class="featured-card-date">12/22/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$24.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--N02q2m.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Sail Forth</h3>
+                  <div class="featured-card-date">12/21/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$19.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--uUfDz2.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Sports Story</h3>
+                  <div class="featured-card-date">12/23/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$14.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--LTzovB.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Melatonin</h3>
+                  <div class="featured-card-date">12/22/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$14.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--hIuVPt.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Hyper Gunsport</h3>
+                  <div class="featured-card-date">12/22/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$24.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--uUfDz2.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Sports Story</h3>
+                  <div class="featured-card-date">12/23/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$14.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--LTzovB.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Melatonin</h3>
+                  <div class="featured-card-date">12/22/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$14.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--hIuVPt.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Hyper Gunsport</h3>
+                  <div class="featured-card-date">12/22/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$24.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--N02q2m.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Sail Forth</h3>
+                  <div class="featured-card-date">12/21/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$19.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <div class="featured-card">
+              <section class="featured-card-image-container">
+                <img
+                  src="assets/img/hero--N02q2m.png"
+                  alt="Nintendo switch preview"
+                  width="260px"
+                  height="146px"
+                />
+              </section>
+              <section class="featured-card-description-container">
+                <div class="featured-card-description">
+                  <h3 class="featured-card-text">Sail Forth</h3>
+                  <div class="featured-card-date">12/21/2022</div>
+                </div>
+                <div style="padding: 0.5rem"></div>
+                <!--filler for right height-->
+                <div class="featured-card-price">
+                  <b>$19.99</b>
+                </div>
+                <div class="featured-card-console-grid">
+                  <div class="featured-card-console">
+                    <div class="vline-red"></div>
+                    <span class="console">Nintendo Switch</span>
+                  </div>
+                  <button class="featured-card-heart">
+                    <svg
+                      viewBox="0 0 54 54"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      width="45"
+                      color="currentColor"
+                      size="45"
+                    >
+                      <g class="heart">
+                        <path
+                          class="heart-outline"
+                          d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                        ></path>
+                      </g>
+                      <g class="sparks">
+                        <path
+                          class="spark"
+                          d="M27 8V0M27 46v8"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                          stroke-width="1.99998"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M46 27h8M8 27H0"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="spark"
+                          d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                          stroke-width="1.99998"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <a class="pos" id="posx1"></a>
+            <a class="pos" id="posx2"></a>
+            <a class="pos" id="posx3"></a>
+            <a class="pos" id="posx4"></a>
+
+            <a href="#posx1" id="leftx1">
+              <button
+                aria-label="Previous page"
+                tabindex="0"
+                class="slider-button-prev slider-button-active"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M14.3 16l12.4 11.7-4.5 4.3L5.3 16 22.2 0l4.5 4.3z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+
+            <a href="#posx2" id="leftx2">
+              <button
+                aria-label="Previous page"
+                tabindex="0"
+                class="slider-button-prev"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M14.3 16l12.4 11.7-4.5 4.3L5.3 16 22.2 0l4.5 4.3z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+
+            <a href="#posx3" id="leftx3">
+              <button
+                aria-label="Previous page"
+                tabindex="0"
+                class="slider-button-prev"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M14.3 16l12.4 11.7-4.5 4.3L5.3 16 22.2 0l4.5 4.3z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+
+            <a href="#posx2" id="rightx1">
+              <button
+                aria-label="Next page"
+                tabindex="0"
+                class="slider-button-next slider-button-active"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                  color="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M5.3 4.3L9.8 0l16.9 16L9.8 32l-4.5-4.3L17.7 16z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+            <a href="#posx3" id="rightx2">
+              <button
+                aria-label="Next page"
+                tabindex="0"
+                class="slider-button-next"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                  color="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M5.3 4.3L9.8 0l16.9 16L9.8 32l-4.5-4.3L17.7 16z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+            <a href="#posx4" id="rightx3">
+              <button
+                aria-label="Next page"
+                tabindex="0"
+                class="slider-button-next"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="36"
+                  role="presentation"
+                  alt=""
+                  size="36"
+                  color="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    fill="currentColor"
+                    d="M5.3 4.3L9.8 0l16.9 16L9.8 32l-4.5-4.3L17.7 16z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
