@@ -10,24 +10,28 @@
     margin-bottom: 2rem;
  }
  .gaming-system-description{
-    display: flex;
-    flex-direction: row;
-    padding-left: 0;
-    align-items: center;
-
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   gap:2.5rem;
+   align-items:center;
+   padding-left: 0;
+   align-items: start;
+   width:70%;
  }
- @media(max-width:768px){
+ 
+ .gaming-system-b{
+    width: 60%;
+ }
+ @media(max-width:1024px){
     .gaming-system-description{
-       
+         width: 100%;
         flex-direction: column;
         justify-content: center;
         
      }
      .gaming-system-b{
-        width: 80%;
+        width: 100%;
      }
     
- }
- .gaming-system-b{
-    width: 60%;
  }
