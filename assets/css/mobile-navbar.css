@@ -36,19 +36,17 @@ a {
     text-decoration: none;
 }
 
-button, a {
-    display: inline-flex;
+.mobile-navbar-button , .mobile-navbar-button a {
     text-decoration: none;
     border:none;
     background-color: transparent;
-    margin:5px;
-}
+}   
 
 .search-button {
     display: flex;
     justify-content: center;
     width: 32px;
-    transform: translateX(3px) translateY(3px);
+    transform: translateX(13px) translateY(13px);
 }
 
 .center {

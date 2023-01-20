@@ -1,8 +1,12 @@
 .online-store{
-    width: 100%;
+    max-width: 75rem;
     height: 60vh;
     display: flex;
     flex-direction: column;
+    margin-left:auto;
+    margin-right: auto;
+    padding-left:1rem;
+    padding-right:1rem;
  }
  .online-store-img-link{
     margin-bottom: 1rem;
@@ -22,13 +26,12 @@
  }
  .online-store-b{
     width: 80%;
+
  }
  @media(max-width:1024px){
     .online-store-description{
        
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
      }
      .online-store-b{
         width: 90%;
