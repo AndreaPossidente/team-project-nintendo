@@ -1,0 +1,32 @@
+.brand-bar-container{
+    background-color: var(--red);
+    max-width: 100%;
+}
+
+.brand-bar-content{
+    padding:2rem;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1500px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.brand-bar-social{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    max-width:100%;
+    gap:2rem;
+}
+
+@media (max-width: 768px){
+    .brand-bar-content{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
