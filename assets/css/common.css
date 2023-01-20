@@ -3,6 +3,7 @@
 @import url("button-style.css");
 @import url("featured-section.css");
 @import url("character-section.css");
+@import url("topbar.css");
 @import url("navbar.css");
 @import url("slider-pos.css");
 @import url("modal-login.css");
@@ -11,3 +12,8 @@
 @import url("hero-section.css");
 @import url("mobile-navbar.css");
 @import url("see-full-list-button.css");
+@import url("divider.css");
+@import url("gaming-system.css");
+@import url("brand-bar.css");
+@import url("footer-linkbar.css");
+@import url("footer-legalbar.css");

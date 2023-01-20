@@ -4,6 +4,9 @@
 
 Nintendo website clone for Develhope.
 
+You can preview the project following this link:
+[View Demo](https://andreapossidente.github.io/team-project-nintendo/)
+
 ## Naming Conventions
 
 A collection of guidelines for writing file names, branches, commits, css classes, etc. [View Rules](https://github.com/AndreaPossidente/team-project-nintendo/blob/main/naming-conventions.md)

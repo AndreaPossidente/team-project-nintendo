@@ -153,7 +153,6 @@
     position: absolute;
     bottom: 0px;
     right: 0px;
-    z-index: 1;
     margin:-0.75rem;
     padding: 1rem;
     -webkit-tap-highlight-color: transparent;
@@ -252,10 +251,6 @@
     cursor: pointer;
 }
 
-.featured-slider-section-container {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
 
 .featured-slider-container {
     display: flex;
@@ -387,4 +382,19 @@ div:has(+ div > #pos4:target)>div {
 
 #pos1:target~#left1 {
     display: none;
+}
+
+.slider-center{
+    max-width:70rem;
+    margin-left:auto;
+    margin-right: auto;
+    padding-bottom:5rem;
+}
+
+.slider-center-second{
+    max-width:70rem;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: -4rem;
+    padding-bottom:6rem;
 }
