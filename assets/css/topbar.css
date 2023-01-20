@@ -1,0 +1,214 @@
+/* topbar style */
+
+#topbar {
+  height: var(--topbar-height);
+  width: 100%;
+  border-bottom: 1px solid var(--light-gray);
+  display: flex;
+  justify-content: space-between;
+}
+
+#topbar > .topbar-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#topbar > .topbar-right > ul.topbar-right-list {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  gap: 1.75rem;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+
+#topbar > .topbar-right > ul.topbar-right-list > li.topbar-right-list-item {
+  display: flex;
+  /* add icon gap */
+}
+
+#topbar > .topbar-right > ul.topbar-right-list > li.topbar-right-list-item > a {
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+
+  transition: all 200ms ease-in-out;
+}
+
+#topbar
+  > .topbar-right
+  > ul.topbar-right-list
+  > li.topbar-right-list-item
+  > a:hover {
+  color: var(--red);
+}
+#topbar
+  > .topbar-right
+  > ul.topbar-right-list
+  > li.topbar-right-list-item
+  > a
+  > svg {
+  margin-right: 0.375rem;
+}
+#topbar > .topbar-left > .topbar-left-logo {
+  width: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--red);
+}
+
+#topbar > .topbar-left > form {
+  height: 33px;
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gray);
+  position: relative;
+}
+#topbar > .topbar-left > form select {
+  background-color: transparent;
+  appearance: none;
+}
+#topbar > .topbar-left > form select > option {
+  background-color: transparent;
+}
+
+#topbar > .topbar-left > form > #search {
+  background-color: transparent;
+  width: 308px;
+  height: 33px;
+  border: none;
+  transition: all 300ms ease-in-out;
+  padding-left: 28px;
+  position: relative;
+  display: inline-block;
+}
+
+#topbar > .topbar-left > form::before {
+  content: url(/assets/icons/topbar/search.svg);
+  position: absolute;
+  top: 10;
+  left: 10;
+  z-index: 100;
+  width: 18px;
+  height: 18px;
+}
+
+#topbar > .topbar-left > form:hover::before {
+  filter: invert(7%) sepia(100%) saturate(5697%) hue-rotate(348deg)
+    brightness(136%) contrast(116%);
+}
+
+#topbar > .topbar-left > form > #search:focus {
+  outline: none;
+}
+
+#topbar > .topbar-left > form:has(#search:focus) {
+  border-bottom: 1px solid var(--red);
+}
+
+#topbar > .topbar-left > form:hover {
+  border-bottom: 1px solid var(--red);
+}
+
+#topbar > .topbar-left > form > #search:hover:not(:focus)::placeholder {
+  transition: all 300ms ease-in-out;
+  color: var(--red);
+}
+#topbar > .topbar-left > form > #search {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.topbar-category {
+  width: 140px;
+  position: relative;
+  height: 33px;
+}
+
+.topbar-category > svg {
+  top: 10px;
+  position: absolute;
+  right: 10px;
+  transition: all 300ms ease-in-out;
+}
+
+.topbar-category:hover > svg {
+  color: var(--red);
+}
+
+.topbar-category > select:focus + svg {
+  transform: rotate(180deg);
+}
+
+#topbar > .topbar-left > form select {
+  font-family: inherit;
+  font-weight: 700;
+  width: 100%;
+  font-size: 0.875rem;
+  height: 33px;
+  border-radius: 0;
+  border: none;
+  appearance: none;
+  color: var(--gray);
+  padding: 0.125rem 0.25rem 0.125rem 0.5rem;
+  transition: all 300ms ease-in-out;
+}
+
+#topbar > .topbar-left > form select:hover {
+  color: var(--red);
+}
+
+#topbar > .topbar-left > form select:focus {
+  outline: none;
+}
+
+#topbar > .topbar-left > form select > option {
+  font-family: "Open Sans", sans-serif;
+  color: var(--gray);
+  background-color: rgb(247, 247, 247);
+  background-image: none;
+  font-size: 0.75rem;
+  height: 50px;
+  padding: 15px;
+  border: 1px solid rgb(41, 18, 18);
+  appearance: none;
+}
+
+@media screen and (max-width: 1025px) {
+  #nav {
+    display: none;
+  }
+  #topbar {
+    height: 46px;
+  }
+  #topbar > .topbar-left > form {
+    display: none;
+  }
+
+  #topbar > .topbar-left {
+    background-color: var(--red);
+    width: 100%;
+    justify-content: flex-start;
+  }
+  #topbar > .topbar-left > .topbar-left-logo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: auto;
+  }
+  #topbar > .topbar-left > .topbar-left-logo img {
+    width: 89px;
+  }
+  #topbar > .topbar-right {
+    display: none;
+  }
+}
