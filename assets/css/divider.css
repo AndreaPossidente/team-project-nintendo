@@ -18,3 +18,15 @@
     border-top-style: solid;
     border-top-color: rgb(218, 218, 218);
 }
+
+.section-divider-fullwidth{
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top:3rem;
+    padding-bottom:3rem;
+}

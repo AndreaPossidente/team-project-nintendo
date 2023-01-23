@@ -1,10 +1,16 @@
 .gaming-system-container {
   width: 100%;
-  height: 70vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom:3rem;
 }
+
+.gaming-system-container h1{
+  padding-left:0;
+}
+
 .gaming-system-img-link {
   margin-bottom: 2rem;
 }

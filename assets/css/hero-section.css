@@ -41,6 +41,7 @@
 
 .hero-content h1{
     margin:0;
+    white-space: nowrap;
 }
 
 .hero-right{
