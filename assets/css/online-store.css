@@ -7,6 +7,10 @@
     padding-left:1rem;
     padding-right:1rem;
  }
+
+ .online-store h1{
+   padding-left:1rem;
+ }
  .online-store-img-link{
     margin-bottom: 1rem;
     padding-left:1rem;
@@ -14,14 +18,16 @@
     align-self:center
  }
  .online-store-description{
+   align-self: start;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 0;
     align-items: start;
     padding-right:1rem;
-
+    padding-left:1rem;
  }
+ 
+
  .online-store-b{
     width: 80%;
 
