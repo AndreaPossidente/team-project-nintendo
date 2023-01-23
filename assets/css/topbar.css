@@ -206,7 +206,8 @@
     padding-right: 1rem;
     width: auto;
   }
-  #topbar > .topbar-left > .topbar-left-logo img {
+  #topbar > .topbar-left > .topbar-left-logo a {
+    line-height: 0;
     width: 89px;
   }
   #topbar > .topbar-right {
