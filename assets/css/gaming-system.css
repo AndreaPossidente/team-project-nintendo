@@ -1,0 +1,40 @@
+.gaming-system-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom:3rem;
+}
+
+.gaming-system-container h1{
+  padding-left:0;
+}
+
+.gaming-system-img-link {
+  margin-bottom: 2rem;
+}
+.gaming-system-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  align-items: center;
+  padding-left: 0;
+  align-items: start;
+  width: 70%;
+}
+
+.gaming-system-b {
+  width: 60%;
+}
+@media (max-width: 1024px) {
+  .gaming-system-description {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .gaming-system-b {
+    width: 100%;
+  }
+}

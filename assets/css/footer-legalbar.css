@@ -1,0 +1,119 @@
+#legalbar {
+  background-color: var(--dark-gray);
+  color: white;
+  padding: 2rem 1rem 114px;
+  width: 100%;
+}
+
+#legalbar > .legalbar-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+
+  max-width: 90rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#legalbar > .legalbar-container > p.legalbar-copyright {
+  text-align: center;
+  max-width: 60em;
+  font-weight: 300;
+  font-size: 0.62rem;
+  text-align: center;
+  justify-self: center;
+}
+
+#legalbar > .legalbar-container > p.legalbar-copyright > span {
+  display: block;
+}
+
+#legalbar > .legalbar-container > ul.legalbar-links {
+  list-style-type: none;
+}
+
+#legalbar > .legalbar-container > ul.legalbar-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#legalbar > .legalbar-container > ul.legalbar-links > li {
+  display: inline-block;
+}
+
+#legalbar > .legalbar-container > ul.legalbar-links > li > a {
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 700;
+  border-bottom: 2px solid #ffffff00;
+  transition: all 200ms ease-in;
+}
+#legalbar > .legalbar-container > ul.legalbar-links > li > a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+#legalbar > .legalbar-container > .legalbar-changeregion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+#legalbar > .legalbar-container > .legalbar-changeregion > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  gap: 0.5rem;
+}
+
+#legalbar > .legalbar-container > .legalbar-changeregion > a > span {
+  border-bottom: 2px solid #ffffff00;
+  transition: all 200ms ease-in;
+}
+
+#legalbar > .legalbar-container > .legalbar-changeregion > a:hover > span {
+  border-bottom: 2px solid #ffffff;
+}
+
+@media (min-width: 429px) {
+  #legalbar > .legalbar-container > p.legalbar-copyright {
+    font-size: 0.75rem;
+  }
+
+  #legalbar > .legalbar-container > p.legalbar-copyright > span {
+    display: inline-block;
+  }
+
+  #legalbar > .legalbar-container > ul.legalbar-links > li > a {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  #legalbar {
+    padding: 2rem 1rem;
+  }
+
+  #legalbar > .legalbar-container > p.legalbar-copyright {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    max-width: 62em;
+  }
+
+  #legalbar > .legalbar-container > p.legalbar-copyright > span {
+    display: inline;
+  }
+
+  #legalbar > .legalbar-container {
+    grid-template-columns: 1fr auto auto;
+  }
+}

@@ -1,0 +1,88 @@
+.character-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.character-card-image-container {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.character-card-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.15);
+    transition: transform 200ms ease-in-out;
+}
+
+.character-card-bg img {
+    width: 100%;
+    display: block;
+}
+
+.character-card-img {
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+}
+
+.character-card-img img {
+    width: 100%;
+    display: block;
+}
+
+.character-card-image-container:hover .character-card-img {
+    transform: scale(1.15);
+    transition: transform 200ms ease-in-out;
+}
+
+.character-card-image-container:hover .character-card-bg {
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+}
+
+.character-card-image-container:hover {
+    cursor: pointer;
+}
+
+.characters-section-container {
+    padding-top: 3rem;
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.characters-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+}
+
+.character-title {
+    grid-column: 1 / span 3;
+}
+
+@media screen and (max-width: 768px) {
+    .characters-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

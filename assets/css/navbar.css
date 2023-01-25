@@ -1,0 +1,309 @@
+/* header style */
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    z-index: 2;
+}
+
+/** topbar style 
+      * if necessary replace it with it's own class
+      */
+header>div:first-child {
+    height: var(--topbar-height);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+/* navbar style */
+#nav {
+    height: var(--navbar-height);
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--light-gray);
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+/* style for the semi-transparent overlay appearing on li hover */
+#nav>.nav-overlay {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms ease-in-out;
+    position: fixed;
+    top: calc(var(--navbar-height) + var(--topbar-height));
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+#nav:has(> ul > li:hover > .subnav) .nav-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+#nav>ul>li {
+    cursor: pointer;
+    list-style-type: none;
+    display: inline-block;
+}
+
+#nav>ul>li {
+    cursor: pointer;
+}
+
+#nav>ul>li>.subnav {
+    cursor: default;
+}
+
+/* Main Navbar Style */
+#nav>ul {
+    z-index: 3;
+}
+
+#nav>ul>li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+#nav>ul>li>a {
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+}
+
+#nav>ul>li>a,
+#nav>ul>li>img {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+#nav>ul>li:hover>a,
+#nav>ul>li:hover>img {
+    text-decoration: none;
+    filter: invert(7%) sepia(100%) saturate(5697%) hue-rotate(348deg) brightness(136%) contrast(116%);
+}
+
+#nav>ul>li>a>img:nth-of-type(2) {
+    transition: transform 200ms ease-in-out;
+}
+
+#nav>ul>li:hover>a>img:nth-of-type(2) {
+    transform: rotate(180deg);
+}
+
+#nav li>.subnav {
+    z-index: 3;
+    left: 0;
+    top: calc(var(--navbar-height) + var(--topbar-height));
+    background-color: var(--white);
+    position: absolute;
+    width: 100%;
+
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+#nav li:hover>.subnav {
+    max-height: 304px;
+}
+
+#nav .subnav-wrapper {
+    padding-top: 0rem;
+    padding-bottom: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav .subnav .subnav-header {
+    padding-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#nav .subnav .subnav-header-red {
+    width: 100%;
+    height: 64px;
+    background-color: var(--red);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav .subnav .subnav-header-red+.subnav-header-red-waves {
+    position: relative;
+    width: 100%;
+    height: 14px;
+    background-image: url(/assets/icons/nav/wave.svg);
+    background-size: auto 14px;
+    background-repeat: repeat-x;
+    z-index: 4;
+    padding-bottom: 1.5rem;
+}
+
+#nav .subnav .subnav-btn-close {
+    opacity: 0.5;
+    transition: opacity 300ms ease-in-out;
+    padding-right: 1rem;
+    padding-bottom: 0.25rem;
+}
+
+#nav .subnav .subnav-btn-close:hover {
+    opacity: 1;
+    color: var(--gray);
+}
+
+#nav .subnav .subnav-btn-close-light {
+    position: absolute;
+    right: 0;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(325deg) brightness(300%) contrast(105%);
+    transition: opacity 300ms ease-in-out;
+    padding-right: 1rem;
+    padding-bottom: 0.25rem;
+}
+
+#nav .subnav .subnav-btn-close-light:hover {
+    filter: invert(96%) sepia(0%) saturate(7419%) hue-rotate(304deg) brightness(150%) contrast(60%);
+}
+
+#nav .subnav .subnav-content {
+    max-width: 1440px;
+    min-width: calc(1025px - 2rem);
+    display: flex;
+    justify-content: center;
+    gap: 1.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0px auto;
+}
+
+#nav .subnav .subnav-content .subnav-content-group {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    min-width: 7.5rem;
+}
+
+#nav .subnav .subnav-content .subnav-content-group-heading {
+    padding: 0.25rem 0px;
+    font-size: 1rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    transition: all 200ms ease-in-out;
+}
+
+#nav .subnav a {
+    cursor: pointer;
+    color: var(--gray);
+    transition: all 300ms ease-in-out;
+}
+
+#nav .subnav a:hover {
+    color: var(--red);
+}
+
+#nav .subnav .subnav-content .subnav-content-group-heading img {
+    filter: invert(7%) sepia(100%) saturate(5697%) hue-rotate(348deg) brightness(136%) contrast(116%);
+    margin: 0px 0.375rem 0px 0px;
+}
+
+#nav .subnav .subnav-content .subnav-content-group-heading:hover a {
+    color: var(--red);
+}
+
+#nav .subnav .subnav-content .subnav-content-group-item {
+    padding: 0.25rem 0px;
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+.subnav-content-tile:has(.subnav-content-tile-icon) {
+    text-align: center;
+    width: 120px;
+    text-decoration: none;
+}
+
+.subnav-content-tile:has(.subnav-content-tile-image) {
+    text-align: center;
+    text-decoration: none;
+}
+
+.subnav-content-tile-image {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0px;
+}
+
+.subnav-content-tile:hover .subnav-content-tile-icon,
+.subnav-content-tile:hover .subnav-content-tile-image {
+    background-color: var(--red);
+}
+
+.subnav-content-tile:hover .subnav-content-tile-icon img {
+    filter: invert(100%) brightness(200%);
+}
+
+.subnav-content-tile-icon {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 4.25rem;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--white);
+    transition-property: background-color, border-color;
+    transition-duration: 200ms;
+}
+
+.subnav-content-tile-image {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 4.25rem;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--white);
+    transition-property: background-color, border-color;
+    transition-duration: 200ms;
+}
+
+.subnav-content-tile-icon img {
+    height: 42px;
+    width: 42px;
+}
+
+.subnav-content-tile-image img {
+    height: 4.25rem;
+    object-fit: contain;
+}
+
+.subnav-content-tile-label {
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1025px) {
+    #nav {
+        display: none;
+    }
+}
